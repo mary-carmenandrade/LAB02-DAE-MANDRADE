@@ -1,0 +1,19 @@
+<h2>{{titulo}}</h2>
+<p>Tipo de operación: {{operacion}}</p>
+<p>Número 1: {{num1}}</p>
+<p>Número 2: {{num2}}</p>
+{% if operacion == "suma" %}
+    <li>La suma de {{num1}} + {{num2}} = {{suma}}</li>
+{% endif %}
+  
+{% if operacion == "resta" %}
+    <li>La resta de {{num1}} - {{num2}} = {{resta}}</li>
+{% endif %}
+
+{% if operacion == "multiplicacion" %}
+    <li>La multiplicación de {{num1}} * {{num2}} = {{multiplicacion}}</li>
+{% endif %}
+
+{% if operacion == "division" %}
+    <li>La división de {{num1}} / {{num2}} = {{division}}</li>
+{% endif %}
